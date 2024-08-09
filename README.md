@@ -26,3 +26,10 @@ En la terminal de Mac:
 source austral/bin/activate
 ```
 
+
+### 3. Instalar las dependencias
+
+Ejecuta el siguiente comando en tu terminal para instalar las dependencias:
+
+```bash
+pip install -r requirements.txt
