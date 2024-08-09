@@ -33,3 +33,21 @@ Ejecuta el siguiente comando en tu terminal para instalar las dependencias:
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Ejecutar una App de Streamlit en Localhost
+
+**Asegúrate de estar en el entorno virtual correcto y activo**
+
+
+Ejecuta la aplicación de Streamlit:
+
+```bash
+streamlit run streamlit-chat.py
+```
+
+Accede a la aplicación de Streamlit:
+
+```bash
+http://localhost:8501
+```
