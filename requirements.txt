@@ -1,1 +1,5 @@
 streamlit
+langchain
+langgraph
+langsmith
+langchain-groq
