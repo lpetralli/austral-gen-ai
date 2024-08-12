@@ -3,3 +3,5 @@ langchain
 langgraph
 langsmith
 langchain-groq
+tavily-python
+langchain_community
