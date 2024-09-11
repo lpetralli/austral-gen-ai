@@ -6,3 +6,4 @@ langchain-groq
 tavily-python
 langchain_community
 ipykernel
+python-dotenv
