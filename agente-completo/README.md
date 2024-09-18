@@ -1,6 +1,7 @@
-1. Instalar esta nueva libreria en el mismo entorno virtual que la clase pasada:
+1. Instalar estas nuevas librerías en el mismo entorno virtual que la clase pasada:
    ```
    pip install langchain_openai
+   pip install --upgrade langchain_groq
    ```
    
    Nota: Si aparece un error en rojo durante la instalación, no te preocupes. Continúa con la instalación y verifica después si la librería ya no aparece subrayada en el código. Si es así, la instalación se ha completado correctamente a pesar del mensaje de error.
