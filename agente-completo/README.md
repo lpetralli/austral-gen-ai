@@ -7,7 +7,7 @@
 2. Copiar los archivos `LangGraph.py`, `agent.py`, y `chat.py` a tu repositorio:
 
    - Copiar los archivos `LangGraph.py`, `agent.py`, y `chat.py` del repositorio del curso.
-   - Colocar estos archivos en el mismo directorio donde tienes el notebook de la clase anterior (al mismo nivel que el archivo `mi-primer-agente.ipynb`).
+   - Colocar estos archivos en el mismo directorio donde tienes el notebook de la clase anterior (al mismo nivel que el archivo `mi-primer-agente.ipynb`). **Asegúrate de mantener los mismos nombres de archivo: `LangGraph.py`, `agent.py`, y `chat.py`.**
 
 3. Completar en `chat.py` el prompt de la clase pasada.
 
