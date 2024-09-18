@@ -26,4 +26,4 @@ class Agent:
         # Run the graph synchronously and obtain the output
         graph_output = self.graph.invoke(initial_state)
         
-        return graph_output["messages"]
+        return graph_output
