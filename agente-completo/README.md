@@ -2,6 +2,8 @@
    ```
    pip install langchain_openai
    ```
+   
+   Nota: Si aparece un error en rojo durante la instalación, no te preocupes. Continúa con la instalación y verifica después si la librería ya no aparece subrayada en el código. Si es así, la instalación se ha completado correctamente a pesar del mensaje de error.
 
 
 2. Copiar los archivos `LangGraph.py`, `agent.py`, y `chat.py` a tu repositorio:
