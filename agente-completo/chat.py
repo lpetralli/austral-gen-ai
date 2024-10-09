@@ -3,17 +3,34 @@ from agent import Agent
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate
 import re
+from langchain_openai import OpenAIEmbeddings
+from langchain_chroma import Chroma
+from tool import create_retriever_tool_from_vectorstore
+
+
+persist_directory = "./chroma_db" 
+
+try:
+    vectorstore = Chroma(
+        collection_name="rag-chroma",
+        embedding_function=OpenAIEmbeddings(),
+        persist_directory=persist_directory
+    )
+    tools = [create_retriever_tool_from_vectorstore(vectorstore)]
+except Exception as e:
+    st.write(f"Error creating vectorstore: {e}")
+    tools = None
+
 
 prompt = """
-You are a helpful assistant that can answer questions and help with tasks.
+You are a helpful assistant that can answer questions and help with tasks about AutoCare. Always use the retriever tool to search for information about the company.
 """
 
-tools = None
-
 if tools:
-    agent = Agent(model_type="groq", prompt=prompt, tools=tools)
+    agent = Agent(model_type="openai", prompt=prompt, tools=tools)
 else:
-    agent = Agent(model_type="groq", prompt=prompt)
+    st.write("No tools available")
+    agent = Agent(model_type="openai", prompt=prompt)
 
 
 st.title("Agent Chat Bot")

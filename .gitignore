@@ -1,3 +1,5 @@
 /austral
 .env
 /.venv
+chroma_db/
+agente-completo/__pycache__
