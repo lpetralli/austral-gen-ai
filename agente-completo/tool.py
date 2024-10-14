@@ -41,7 +41,7 @@ class GetCarPriceTool(BaseTool):
             raise ValueError(f"Invalid car model. Available models are: {available_models}")
 
         price = car_prices[model]
-        return CarPriceOutput(model=model, price=price).dict()
+        return CarPriceOutput(model=model, price=price)
 
 def create_get_car_price_tool():
     return GetCarPriceTool()
