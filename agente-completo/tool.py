@@ -8,11 +8,13 @@ def create_retriever_tool_from_vectorstore(vectorstore):
         "Search and return information about AutoCare",
     )
 
+# -------------------------------------------------------------------------------------------------
+
 from typing import Dict, Literal
 from pydantic import BaseModel, Field
 from langchain.tools import BaseTool
 
-CarModelOptions = Literal["Model S", "Model 3", "Model X", "Model Y", "Cybertruck"]
+CarModelOptions = Literal["Model S", "Model 3", "Model X", "Model Y", "Cybertruck","Truck"]
 
 class CarModelInput(BaseModel):
     model: CarModelOptions = Field(..., description="The model of the car")
@@ -34,6 +36,7 @@ class GetCarPriceTool(BaseTool):
             "Model X": 89990.0,
             "Model Y": 49990.0,
             "Cybertruck": 39900.0,
+            "Truck": 0.0,
         }
 
         if model not in car_prices:
